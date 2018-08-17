@@ -16,7 +16,7 @@ const run = async () => {
 
   const files = JSON.parse(decode(filesSecret.data.files))
   return Promise.all(files.map(async file => {
-    const path = joinPath(rootPath, file.relativePath)
+    const path = joinPath(rootPath, file.path)
     await mkdirs(dirnameOfPath(path))
     await writeFile(path, decode(file.content))
   }))

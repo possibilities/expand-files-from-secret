@@ -1,4 +1,5 @@
 {
+  "version": "0.1.0",
   "dependencies": {
     "fs-extra": "^7.0.0",
     "kube-client": "^0.3.14"
